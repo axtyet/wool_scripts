@@ -14,3 +14,10 @@ jobs:
           owner: fmz200 # fork 的上游仓库 user
           head: main # fork 的上游仓库 branch
           base: main # 本地仓库 branch
+      - name: Commit and push
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Action"
+          git add .
+          git commit -m "Update files"
+          git push
