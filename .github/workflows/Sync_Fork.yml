@@ -16,10 +16,10 @@ jobs:
 
         steps:
             - name: Checkout target repo
-              uses: actions/checkout@v3
+              uses: actions/checkout@v4
 
             - name: Sync Upstream
-              uses: aormsby/Fork-Sync-With-Upstream-action@v3.4
+              uses: aormsby/Fork-Sync-With-Upstream-action@v3.4.1
               with:
                   target_repo_token:  ${{ secrets.PERSONAL_TOKEN }}
                   upstream_sync_repo: fmz200/wool_scripts
